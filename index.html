@@ -1,0 +1,56 @@
+
+<html>
+<head>
+ 		 <style>
+  		  body {
+    	 	 text-align: center;
+   			 }
+    #hh1 {
+      color: red;
+      font-size: 3em;
+    }
+    #hh2 {
+      color: green;
+      font-size: 2.5em;
+    }
+    #txt1 {
+      width: 50%;
+      height: 25%;
+      font-size: 12em;
+      color: violet;
+      background-color: pink;
+      border: 5px solid red;
+      border-radius: 20px;
+      text-align: center;
+    }
+  </style>
+
+  <script>
+    let i = 0;
+    setInterval(bbb, 1000);
+
+    function bbb() {
+      	document.getElementById('txt1').value = i;
+      			if(i%2){
+     		              document.getElementById('led1').checked=true;
+   		    }
+    	           else{     
+   	                       document.getElementById('led1').checked=false;
+   	                 }
+ 
+                                                                
+      	 		if (i >= 10000) i = -1; 
+     			 i++;
+    }
+  </script>
+</head>
+
+<body>
+  <h1 id="hh1">1초마다 숫자 자동 증가/led 점멸</h1>
+  <hr>
+  <input id='txt1' type='text' value='1'>
+  <input id= 'led1' type ='radio'>
+  <hr>
+  <h1 id="hh2">작성자 : 이채원</h1>
+</body>
+</html>
